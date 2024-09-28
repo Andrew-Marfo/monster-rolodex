@@ -1,9 +1,6 @@
-import { Component } from "react";
-
 import './search-box.styles.css'
 
-class SearchBox extends Component {
-    render() {
+const SearchBox =()=>  {
         return (
             <input
                 className={`search-box ${this.props.className}`}
@@ -12,7 +9,6 @@ class SearchBox extends Component {
                 onChange={this.props.onChangeHandler}
             />
         )
-    }
 }
 
 export default SearchBox;
