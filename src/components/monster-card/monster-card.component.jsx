@@ -1,6 +1,6 @@
 import './monster-card.styles.css';
 
-const MonsterCard = (monster)=> {
+const MonsterCard = ({monster})=> {
         const { id, name, email } = monster;
         return (
             <div className="monster-card" key={id}>
